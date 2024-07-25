@@ -5,6 +5,7 @@ using namespace std;
 class TicTacToe {
 
 private:
+
     vector<vector<char>> board;
     char current_player;
 
@@ -63,11 +64,13 @@ public:
         }
 
         board[row][col] = current_player;
+
         if (is_winner(current_player)) {
             print_board();
             cout << "Player " << current_player << " wins!" << endl;
             return true;
         }
+        
         if (is_draw()) {
             print_board();
             cout << "The game is a draw!" << endl;

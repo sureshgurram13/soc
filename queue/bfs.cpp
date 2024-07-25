@@ -7,7 +7,7 @@ public:
     map<int, vector<int> > adj;
  
     void addEdge(int v, int w);
-    void DFS(int v);
+    void BFS(int v);
 
 };
  
@@ -17,17 +17,17 @@ void Graph::addEdge(int v, int w)
     adj[w].push_back(v);
 }
  
-void Graph::DFS(int v)
+void Graph::BFS(int v)
 {   
 
     map<int, bool> visited;
 
-    stack<int> temp ;
+    queue<int> temp ;
     temp.push(v);
 
     while(temp.size() != 0){
 
-        int curr = temp.top();
+        int curr = temp.front();
         temp.pop();
 
         if(!visited[curr]){
@@ -49,14 +49,13 @@ int main()
     g.addEdge(0, 1);
     g.addEdge(0, 2);
     g.addEdge(1, 2);
-    g.addEdge(2, 0);
     g.addEdge(2, 3);
     g.addEdge(3, 3);
  
-    cout << "Following is Depth First Traversal"
+    cout << "Following is Breadth First Traversal"
             " (starting from vertex 2) \n";
  
-    g.DFS(2);
+    g.BFS(2);
  
     return 0;
 }

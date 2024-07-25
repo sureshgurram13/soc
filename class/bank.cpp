@@ -4,6 +4,7 @@ using namespace std;
 class BankAccount {
 
 private:
+
     double balance;
 
 public:
@@ -35,12 +36,13 @@ public:
     }
 
     void getBalance(){
-        std::cout << "Current balance: $" << balance << std::endl;
+        std::cout << "Current balance: " << balance << std::endl;
     }
 
 };
 
 int main() {
+
     BankAccount account(100.0);
     account.deposit(50.0);
     account.withdraw(20.0);
