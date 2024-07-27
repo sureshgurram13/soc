@@ -12,7 +12,7 @@ Usage:
         "1 2
          2 4"
 
-2)  Compiple the code using "g++ search.cpp -o seacrh.out"
+2)  Compiple the code using "g++ search.cpp -o search.out"
     (Present search.cpp prints above example)
 
 3)  Run "python3 code_canvas.py". If running gives any errors, download required libraries
