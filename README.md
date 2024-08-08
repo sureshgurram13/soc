@@ -47,9 +47,3 @@ In this project, we aim to achieve the following:
   - Search functionality powered by the KMP algorithm.
   - Real-time word highlighting based on the search results.
   
-## How to Run
-
-1. **Clone the Repository**:
-   ```bash
-   git clone https://github.com/yourusername/caption-code-canvas.git
-   cd caption-code-canvas
